@@ -28,6 +28,21 @@ document.getElementById("openRhotBtn").addEventListener("click", function () {
     document.getElementById("rhotModal").style.display = "block";
 });
 
+document.getElementById("openMyraBtn").addEventListener("click", function () {
+    document.getElementById("myraModal").style.display = "block";
+});
+
+document.getElementById("openSindriBtn").addEventListener("click", function () {
+    document.getElementById("sindriModal").style.display = "block";
+});
+
+document.getElementById("openJayBtn").addEventListener("click", function () {
+    document.getElementById("jayModal").style.display = "block";
+});
+
+document.getElementById("openLynBtn").addEventListener("click", function () {
+    document.getElementById("lynModal").style.display = "block";
+});
 // Close Buttons
 
 document.getElementById("closeMakModal").addEventListener("click", function () {
@@ -63,6 +78,25 @@ document.getElementById("closeRhotModal").addEventListener("click", function () 
 
 });
 
+document.getElementById("closeMyraModal").addEventListener("click", function () {
+    document.getElementById("myraModal").style.display = "none";
+
+});
+
+document.getElementById("closeSindriModal").addEventListener("click", function () {
+    document.getElementById("sindriModal").style.display = "none";
+
+});
+
+document.getElementById("closeJayModal").addEventListener("click", function () {
+    document.getElementById("jayModal").style.display = "none";
+
+});
+
+document.getElementById("closeLynModal").addEventListener("click", function () {
+    document.getElementById("lynModal").style.display = "none";
+
+});
 // Displaying it all
 
 window.addEventListener("click", function (event) {
@@ -86,5 +120,17 @@ window.addEventListener("click", function (event) {
     }
     else if (event.target === document.getElementById("rhotModal")) {
         document.getElementById("rhotModal").style.display = "none";
+    }
+    else if (event.target === document.getElementById("myraModal")) {
+        document.getElementById("myraModal").style.display = "none";
+    }
+    else if (event.target === document.getElementById("sindriModal")) {
+        document.getElementById("sindriModal").style.display = "none";
+    }
+    else if (event.target === document.getElementById("jayModal")) {
+        document.getElementById("jayModal").style.display = "none";
+    }
+    else if (event.target === document.getElementById("lynModal")) {
+        document.getElementById("lynModal").style.display = "none";
     }
 });
