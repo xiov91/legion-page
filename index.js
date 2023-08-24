@@ -2,6 +2,7 @@
 
 document.getElementById("openMakBtn").addEventListener("click", function () {
     document.getElementById("makModal").style.display = "block";
+
 });
 
 document.getElementById("openLuriBtn").addEventListener("click", function () {

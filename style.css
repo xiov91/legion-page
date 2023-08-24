@@ -10,6 +10,12 @@ body {
     
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .page-container {
     border-radius: 15px;
     border-color: #36454F;
@@ -27,12 +33,15 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .profile {
+  display: flex;
   flex: 0 0 calc(33.33% - 20px); /* Adjust width as needed */
   margin: 10px;
   text-align: center;
+  justify-content: space-evenly;
 }
 
 .leaders {
@@ -44,7 +53,8 @@ body {
 
 .midtier {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: space-evenly;
   
 }
 
