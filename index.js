@@ -1,3 +1,32 @@
+// Assuming you have multiple buttons with class "btn-5" or "btn-87"
+const buttons = document.querySelectorAll(".btn-5, .btn-87");
+
+buttons.forEach(button => {
+    button.addEventListener("click", function () {
+        // Hide buttons when a modal pops up
+        buttons.forEach(btn => {
+            btn.style.display = "none";
+        });
+
+        // Show the respective modal
+        // ... your modal logic here ...
+    });
+});
+
+const closeButtons = document.querySelectorAll(".close");
+
+closeButtons.forEach(closeButton => {
+    closeButton.addEventListener("click", function () {
+        // Show buttons when a modal is closed
+        buttons.forEach(btn => {
+            btn.style.display = "block";
+        });
+
+        // Close the modal
+        // ... your modal close logic here ...
+    });
+});
+
 // Open Buttons
 
 document.getElementById("openMakBtn").addEventListener("click", function () {
@@ -135,3 +164,4 @@ window.addEventListener("click", function (event) {
         document.getElementById("lynModal").style.display = "none";
     }
 });
+
