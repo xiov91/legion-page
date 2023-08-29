@@ -58,6 +58,27 @@ document.getElementById("openTogerBtn").addEventListener("click", function () {
     document.getElementById("togerModal").style.display = "block";
 });
 
+document.getElementById("openJhonBtn").addEventListener("click", function () {
+    document.getElementById("jhonModal").style.display = "block";
+});
+
+document.getElementById("openYnaraBtn").addEventListener("click", function () {
+    document.getElementById("ynaraModal").style.display = "block";
+});
+
+document.getElementById("openTogerBtn").addEventListener("click", function () {
+    document.getElementById("togerModal").style.display = "block";
+});
+
+document.getElementById("openZiveriBtn").addEventListener("click", function () {
+    document.getElementById("ziveriModal").style.display = "block";
+});
+
+document.getElementById("openAlexeiBtn").addEventListener("click", function () {
+    document.getElementById("alexeiModal").style.display = "block";
+});
+//
+
 document.getElementById("closeLiamModal").addEventListener("click", function () {
     document.getElementById("liamModal").style.display = "none";
 });
@@ -90,6 +111,24 @@ document.getElementById("closeTogerModal").addEventListener("click", function ()
     document.getElementById("togerModal").style.display = "none";
 });
 
+document.getElementById("closeJhonModal").addEventListener("click", function () {
+    document.getElementById("jhonModal").style.display = "none";
+});
+
+document.getElementById("closeYnaraModal").addEventListener("click", function () {
+    document.getElementById("ynaraModal").style.display = "none";
+});
+
+document.getElementById("closeZiveriModal").addEventListener("click", function () {
+    document.getElementById("ziveriModal").style.display = "none";
+});
+
+document.getElementById("closeAlexeiModal").addEventListener("click", function () {
+    document.getElementById("alexeiModal").style.display = "none";
+});
+
+//
+
 window.addEventListener("click", function (event) {
     if (event.target === document.getElementById("liamModal")) {
         document.getElementById("Modal").style.display = "none";
@@ -113,6 +152,18 @@ window.addEventListener("click", function (event) {
         document.getElementById("Modal").style.display = "none";
     }
     else if (event.target === document.getElementById("togerModal")) {
+        document.getElementById("Modal").style.display = "none";
+    }
+    else if (event.target === document.getElementById("jhonModal")) {
+        document.getElementById("Modal").style.display = "none";
+    }
+    else if (event.target === document.getElementById("ynaraModal")) {
+        document.getElementById("Modal").style.display = "none";
+    }
+    else if (event.target === document.getElementById("ziveriModal")) {
+        document.getElementById("Modal").style.display = "none";
+    }
+    else if (event.target === document.getElementById("alexeiModal")) {
         document.getElementById("Modal").style.display = "none";
     }
 });
